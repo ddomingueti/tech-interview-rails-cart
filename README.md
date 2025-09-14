@@ -56,7 +56,7 @@ Instanciação e controle dos jobs via callback.
 
 ## Como executar o projeto
 
-# Docker
+### Docker
 Você precisa de ter um ambiente funcional do docker primeiro. Siga as instruções para seu sistema operacional:
 - Windows: https://docs.docker.com/desktop/setup/install/windows-install/
 - MacOS: https://docs.docker.com/desktop/setup/install/mac-install/
@@ -64,7 +64,7 @@ Você precisa de ter um ambiente funcional do docker primeiro. Siga as instruç�
 
 Você também precisa do `docker-compose` (https://docs.docker.com/compose/install/).
 
-# Build e Instalação
+### Build e Instalação
 Com o Docker instalado, navegue até a raiz do projeto e digite o comando abaixo para fazer a build dos containers.
 ```bash
 docker-compose build
@@ -85,7 +85,7 @@ Após esses comandos, você pode iniciar o projeto com:
 docker-compose up
 ```
 
-# Testes
+### Testes
 Os testes estão em um container separado, e será instanciado apenas se você achar necessário. Os testes podem ser instanciados diretamente no container com:
 ```bash
 docker-compose run --remove-orphans test
@@ -96,7 +96,7 @@ docker-compose --profile=test run test bash
 RAILS_ENV=test && bundle exec rspec
 ```
 
-# Dependências
+### Dependências
 - ruby 3.3.1
 - rails 7.1.3.2
 - postgres 16
