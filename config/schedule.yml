@@ -1,0 +1,4 @@
+mark_cart_abandoned_cron_job:
+  cron: "59 2 * * *"
+  class: "ClearAbandonedCartsCronJob"
+  queue: default
